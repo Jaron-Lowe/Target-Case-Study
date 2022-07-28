@@ -32,3 +32,48 @@ _Note: Please use UIKit at least for the deals list. While engineers are buildin
 	- Testability
 	- Reusability
 	- Support for different screen sizes
+
+#### TODO
+- ~~iOS 13+~~
+- ~~Add iPad Support!~~
+	- ~~Enable support~~
+	- ~~Restrict detail screen width~~
+	- ~~Add proper scene window support~~
+	- Consider UICollectionView with multi-column support on List screen.
+		- Invalidate layout on trait changes
+- ~~Lock iPhone to Portrait Orientation~~
+- ~~Factory Pattern~~
+- ~~Dependency Injection~~
+- ~~MVVM + C (XCoordinator)~~
+- ~~Localization~~
+- ~~Light/Dark Theme w/Assets~~
+- Networking with Api Protocol
+	- ~~RequestEvent~~
+	- ~~Decodable struct~~
+	- 200 range status Code Validation
+	- Split URL building into UrlBuilder type.
+	- Create CredentialProvider protocol
+- ~~Nuke for async image load~~
+- Fancy Views & Styling
+	- ~~NiblessView~~
+	- ~~Pull to Refresh~~
+	- Loading Activity Indicators
+	- ~~Card View~~
+	- ~~Nav Bar Styles w/Back Button~~
+	- ~~UIView + Corner Radius~~
+	- Something Went Wrong Alert and Empty View
+	- Address Line Height mismatches
+	- Skeleton views while loading
+- ~~Remove Unused Image Assets~~
+- ~~Vector Image Assets (Back Button, Something Went Wrong)~~
+- Add Unit Tests
+	- ~~Enable code coverage~~
+	- Write sample view model test
+	- ~~Mock up service and router~~
+	- Implement a way to inject a provider to HTTPClient to mock URLSession
+- Add SwiftUI support
+	- ViewModels 
+		- Add @Published properties
+		- Bind output results to @Published properties using assign(to:&$) in transform(inputs:)
+	- Add UIHostingViewController helpers for use with UIKit Coordinators
+- Add Analytics logging to viewmodel inputs
