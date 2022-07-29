@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import XCoordinator
+import SimpleApiClient
 
 final class ProductDetailViewModel {
     // MARK: Properties
@@ -22,7 +23,7 @@ extension ProductDetailViewModel: ViewModelTransformer {
     }
     
     struct Compositions {
-        let getProductResult: AnyPublisher<EventState<Product, Error>, Never>
+        let getProductResult: AnyPublisher<AsyncResult<Product, Error>, Never>
     }
     
     struct Outputs {
@@ -45,7 +46,7 @@ extension ProductDetailViewModel: ViewModelTransformer {
 
 private extension ProductDetailViewModel {
     // MARK: Compositions
-    func getProductResult(inputs: Inputs, productID: Int) -> AnyPublisher<EventState<Product, Error>, Never> {
+    func getProductResult(inputs: Inputs, productID: Int) -> AnyPublisher<AsyncResult<Product, Error>, Never> {
         return inputs.viewDidLoads
             .map { [service = self.productService] _ in
                 return service.getProduct(productID: productID)
@@ -66,14 +67,14 @@ private extension ProductDetailViewModel {
     
     func product(compositions: Compositions) -> AnyPublisher<Product, Never> {
         return compositions.getProductResult
-            .compactMap { $0.success }
+            .compactMap { $0.successValue }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
     
     func errorToDisplay(compositions: Compositions) -> AnyPublisher<Error, Never> {
         return compositions.getProductResult
-            .compactMap { $0.failure }
+            .compactMap { $0.failureValue }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

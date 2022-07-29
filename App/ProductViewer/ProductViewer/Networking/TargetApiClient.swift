@@ -1,4 +1,5 @@
 import Foundation
+import SimpleApiClient
 
 final class TargetApiClient: HttpClient {
     // MARK: Init

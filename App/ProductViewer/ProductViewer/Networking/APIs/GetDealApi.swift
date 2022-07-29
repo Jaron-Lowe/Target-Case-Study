@@ -1,4 +1,5 @@
 import Foundation
+import SimpleApiClient
 
 struct GetDealApi {
     // MARK: Properties
@@ -11,6 +12,8 @@ struct GetDealApi {
 }
 
 extension GetDealApi: HttpApiRequest {
+    typealias ResponseType = Product
+    
     var endpointPath: String {
         return "deals/{productID}".replacingOccurrences(of: "{productID}", with: "\(productID)")
     }
@@ -18,13 +21,4 @@ extension GetDealApi: HttpApiRequest {
     var method: HttpMethod {
         return .get
     }
-    
-    var headers: HttpHeaders? {
-        return nil
-    }
-    
-    var parameters: HttpParameters? {
-        return nil
-    }
-    
 }

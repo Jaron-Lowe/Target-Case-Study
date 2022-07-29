@@ -12,15 +12,7 @@
 		5B259CD41D6630E0001D755F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B259CD21D6630E0001D755F /* LaunchScreen.storyboard */; };
 		96D6F5FD280F47B0009338BF /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6F5FB280F47B0009338BF /* UIColor+Helpers.swift */; };
 		96D6F5FE280F47B0009338BF /* UIFont+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D6F5FC280F47B0009338BF /* UIFont+Helpers.swift */; };
-		BB94FCE42892F2C100D6F892 /* HttpApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCD32892F2C100D6F892 /* HttpApiRequest.swift */; };
-		BB94FCE52892F2C100D6F892 /* HttpBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCD42892F2C100D6F892 /* HttpBody.swift */; };
-		BB94FCE62892F2C100D6F892 /* EventState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCD52892F2C100D6F892 /* EventState.swift */; };
-		BB94FCE72892F2C100D6F892 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCD62892F2C100D6F892 /* HttpMethod.swift */; };
-		BB94FCE82892F2C100D6F892 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCD72892F2C100D6F892 /* HttpClient.swift */; };
-		BB94FCE92892F2C100D6F892 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCD82892F2C100D6F892 /* HttpError.swift */; };
-		BB94FCEA2892F2C100D6F892 /* UrlRequestApplying.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCD92892F2C100D6F892 /* UrlRequestApplying.swift */; };
-		BB94FCEB2892F2C100D6F892 /* HttpHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCDA2892F2C100D6F892 /* HttpHeaders.swift */; };
-		BB94FCEC2892F2C100D6F892 /* HttpParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCDB2892F2C100D6F892 /* HttpParameters.swift */; };
+		BB92BFB12894736A001E2914 /* SimpleApiClient in Frameworks */ = {isa = PBXBuildFile; productRef = BB92BFB02894736A001E2914 /* SimpleApiClient */; };
 		BB94FCED2892F2C100D6F892 /* GetDealsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCDD2892F2C100D6F892 /* GetDealsApi.swift */; };
 		BB94FCEE2892F2C100D6F892 /* GetDealApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCDE2892F2C100D6F892 /* GetDealApi.swift */; };
 		BB94FCEF2892F2C100D6F892 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94FCE02892F2C100D6F892 /* Product.swift */; };
@@ -97,15 +89,6 @@
 		9636D41727FF77E700FE8106 /* ProductViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D6F5FB280F47B0009338BF /* UIColor+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
 		96D6F5FC280F47B0009338BF /* UIFont+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Helpers.swift"; sourceTree = "<group>"; };
-		BB94FCD32892F2C100D6F892 /* HttpApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpApiRequest.swift; sourceTree = "<group>"; };
-		BB94FCD42892F2C100D6F892 /* HttpBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpBody.swift; sourceTree = "<group>"; };
-		BB94FCD52892F2C100D6F892 /* EventState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventState.swift; sourceTree = "<group>"; };
-		BB94FCD62892F2C100D6F892 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
-		BB94FCD72892F2C100D6F892 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
-		BB94FCD82892F2C100D6F892 /* HttpError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
-		BB94FCD92892F2C100D6F892 /* UrlRequestApplying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlRequestApplying.swift; sourceTree = "<group>"; };
-		BB94FCDA2892F2C100D6F892 /* HttpHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHeaders.swift; sourceTree = "<group>"; };
-		BB94FCDB2892F2C100D6F892 /* HttpParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParameters.swift; sourceTree = "<group>"; };
 		BB94FCDD2892F2C100D6F892 /* GetDealsApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDealsApi.swift; sourceTree = "<group>"; };
 		BB94FCDE2892F2C100D6F892 /* GetDealApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDealApi.swift; sourceTree = "<group>"; };
 		BB94FCE02892F2C100D6F892 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -163,6 +146,7 @@
 			files = (
 				BB94FD122892F39700D6F892 /* XCoordinator in Frameworks */,
 				BB94FD582892F50E00D6F892 /* NukeUI in Frameworks */,
+				BB92BFB12894736A001E2914 /* SimpleApiClient in Frameworks */,
 				BB94FD182892F3D200D6F892 /* CombineExt in Frameworks */,
 				BB94FD1E2892F3F000D6F892 /* CombineDataSources in Frameworks */,
 				BB94FD1B2892F3DE00D6F892 /* CombineCocoa in Frameworks */,
@@ -235,28 +219,11 @@
 			isa = PBXGroup;
 			children = (
 				BB94FCE12892F2C100D6F892 /* TargetApiClient.swift */,
-				BB94FCD22892F2C100D6F892 /* HttpClient */,
 				BB94FCDC2892F2C100D6F892 /* APIs */,
 				BB94FCDF2892F2C100D6F892 /* Models */,
 				BB94FCE22892F2C100D6F892 /* Services */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		BB94FCD22892F2C100D6F892 /* HttpClient */ = {
-			isa = PBXGroup;
-			children = (
-				BB94FCD32892F2C100D6F892 /* HttpApiRequest.swift */,
-				BB94FCD42892F2C100D6F892 /* HttpBody.swift */,
-				BB94FCD52892F2C100D6F892 /* EventState.swift */,
-				BB94FCD62892F2C100D6F892 /* HttpMethod.swift */,
-				BB94FCD72892F2C100D6F892 /* HttpClient.swift */,
-				BB94FCD82892F2C100D6F892 /* HttpError.swift */,
-				BB94FCD92892F2C100D6F892 /* UrlRequestApplying.swift */,
-				BB94FCDA2892F2C100D6F892 /* HttpHeaders.swift */,
-				BB94FCDB2892F2C100D6F892 /* HttpParameters.swift */,
-			);
-			path = HttpClient;
 			sourceTree = "<group>";
 		};
 		BB94FCDC2892F2C100D6F892 /* APIs */ = {
@@ -556,6 +523,7 @@
 				BB94FD532892F50E00D6F892 /* Nuke */,
 				BB94FD552892F50E00D6F892 /* NukeExtensions */,
 				BB94FD572892F50E00D6F892 /* NukeUI */,
+				BB92BFB02894736A001E2914 /* SimpleApiClient */,
 			);
 			productName = ProductViewer;
 			productReference = 5B259CC61D6630E0001D755F /* ProductViewer.app */;
@@ -615,6 +583,7 @@
 				BB94FD192892F3DE00D6F892 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				BB94FD1C2892F3F000D6F892 /* XCRemoteSwiftPackageReference "CombineDataSources" */,
 				BB94FD522892F50E00D6F892 /* XCRemoteSwiftPackageReference "Nuke" */,
+				BB92BFAF2894736A001E2914 /* XCRemoteSwiftPackageReference "SimpleApiClient" */,
 			);
 			productRefGroup = 5B259CC71D6630E0001D755F /* Products */;
 			projectDirPath = "";
@@ -653,34 +622,25 @@
 				BB94FD462892F46000D6F892 /* ProductListItemCell.swift in Sources */,
 				5B259CCA1D6630E0001D755F /* AppDelegate.swift in Sources */,
 				BB94FD492892F46000D6F892 /* ProductImageView.swift in Sources */,
-				BB94FCE62892F2C100D6F892 /* EventState.swift in Sources */,
 				BB94FCFB2892F2E000D6F892 /* Factory+ApiMaking.swift in Sources */,
 				BB94FCF02892F2C100D6F892 /* TargetApiClient.swift in Sources */,
 				BB94FD6B2892F52E00D6F892 /* PVNavigationController.swift in Sources */,
 				BB94FD6E2892F52F00D6F892 /* NiblessUIImageView.swift in Sources */,
 				BB94FD4C2892F46000D6F892 /* PriceAndFulfillmentStack.swift in Sources */,
-				BB94FCEA2892F2C100D6F892 /* UrlRequestApplying.swift in Sources */,
-				BB94FCE52892F2C100D6F892 /* HttpBody.swift in Sources */,
 				BB94FD242892F44D00D6F892 /* DealsCoordinator.swift in Sources */,
 				BB94FD6F2892F52F00D6F892 /* NiblessUITableViewCell.swift in Sources */,
 				BB94FD682892F52E00D6F892 /* Autolayout.swift in Sources */,
 				BB94FD3E2892F46000D6F892 /* ProductDetailViewModel.swift in Sources */,
 				96D6F5FD280F47B0009338BF /* UIColor+Helpers.swift in Sources */,
-				BB94FCE72892F2C100D6F892 /* HttpMethod.swift in Sources */,
 				BB94FD442892F46000D6F892 /* ProductListViewModel.swift in Sources */,
-				BB94FCE42892F2C100D6F892 /* HttpApiRequest.swift in Sources */,
 				BB94FD712892F52F00D6F892 /* NiblessUIStackView.swift in Sources */,
 				BB94FD732892F52F00D6F892 /* UITableView+Dequeue.swift in Sources */,
 				BB94FD272892F45500D6F892 /* FilledButton.swift in Sources */,
 				BB94FD6C2892F52E00D6F892 /* UITableViewCell+reuseIdentifier.swift in Sources */,
 				BB94FD3F2892F46000D6F892 /* ProductDetailViewController.swift in Sources */,
-				BB94FCEB2892F2C100D6F892 /* HttpHeaders.swift in Sources */,
 				BB94FCED2892F2C100D6F892 /* GetDealsApi.swift in Sources */,
 				BB94FD512892F4B900D6F892 /* SceneDelegate.swift in Sources */,
-				BB94FCE82892F2C100D6F892 /* HttpClient.swift in Sources */,
 				BB94FD432892F46000D6F892 /* ProductDetailView.swift in Sources */,
-				BB94FCEC2892F2C100D6F892 /* HttpParameters.swift in Sources */,
-				BB94FCE92892F2C100D6F892 /* HttpError.swift in Sources */,
 				BB94FD4E2892F46000D6F892 /* ProductServicing.swift in Sources */,
 				BB94FCFC2892F2E000D6F892 /* Factory+CoordinatorMaking.swift in Sources */,
 				BB94FD472892F46000D6F892 /* ProductListView.swift in Sources */,
@@ -970,6 +930,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		BB92BFAF2894736A001E2914 /* XCRemoteSwiftPackageReference "SimpleApiClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jaron-Lowe/SimpleApiClient.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		BB94FD102892F39700D6F892 /* XCRemoteSwiftPackageReference "XCoordinator" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/quickbirdstudios/XCoordinator.git";
@@ -1013,6 +981,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BB92BFB02894736A001E2914 /* SimpleApiClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB92BFAF2894736A001E2914 /* XCRemoteSwiftPackageReference "SimpleApiClient" */;
+			productName = SimpleApiClient;
+		};
 		BB94FD112892F39700D6F892 /* XCoordinator */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BB94FD102892F39700D6F892 /* XCRemoteSwiftPackageReference "XCoordinator" */;

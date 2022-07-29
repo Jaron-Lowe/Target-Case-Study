@@ -1,7 +1,8 @@
 import Foundation
 import Combine
+import SimpleApiClient
 
 protocol ProductServicing {
-    func getProducts() -> AnyPublisher<EventState<[Product], Error>, Never>
-    func getProduct(productID: Int) -> AnyPublisher<EventState<Product, Error>, Never>
+    func getProducts() -> AnyPublisher<AsyncResult<[Product], Error>, Never>
+    func getProduct(productID: Int) -> AnyPublisher<AsyncResult<Product, Error>, Never>
 }

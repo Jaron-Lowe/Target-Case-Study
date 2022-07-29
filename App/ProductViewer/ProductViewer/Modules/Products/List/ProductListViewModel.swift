@@ -2,6 +2,7 @@ import Foundation
 import Combine
 import CombineExt
 import XCoordinator
+import SimpleApiClient
 
 final class ProductListViewModel: ObservableObject {
     // MARK: Properties
@@ -25,7 +26,7 @@ extension ProductListViewModel: ViewModelTransformer {
     }
     
     struct Compositions {
-        let getProductsResult: AnyPublisher<EventState<[Product], Error>, Never>
+        let getProductsResult: AnyPublisher<AsyncResult<[Product], Error>, Never>
     }
     
     struct Outputs {
@@ -66,7 +67,7 @@ private extension ProductListViewModel {
     }
     
     // MARK: Compositions
-    func getProductsResult(inputs: Inputs) -> AnyPublisher<EventState<[Product], Error>, Never> {
+    func getProductsResult(inputs: Inputs) -> AnyPublisher<AsyncResult<[Product], Error>, Never> {
         return Publishers.Merge(
             inputs.viewDidLoads,
             inputs.listRefreshes
@@ -105,7 +106,7 @@ private extension ProductListViewModel {
     
     func errorToDisplay(compositions: Compositions) -> AnyPublisher<Error, Never> {
         return compositions.getProductsResult
-            .compactMap { $0.failure }
+            .compactMap { $0.failureValue }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

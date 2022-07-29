@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import SimpleApiClient
 
 protocol DealsServicing: ProductServicing {}
 
@@ -12,21 +13,17 @@ final class DealsService: DealsServicing {
         self.factory = factory
     }
     
-    func getProducts() -> AnyPublisher<EventState<[Product], Error>, Never> {
+    func getProducts() -> AnyPublisher<AsyncResult<[Product], Error>, Never> {
         return factory.resolveTargetApiClient()
             .send(
                 api: factory.makeGetDealsApi(),
-                for: ProductResponse.self,
-                keyPath: \ProductResponse.products
+                keyPath: \.products
             )
             .eraseToAnyPublisher()
     }
 
-    func getProduct(productID: Int) -> AnyPublisher<EventState<Product, Error>, Never> {
+    func getProduct(productID: Int) -> AnyPublisher<AsyncResult<Product, Error>, Never> {
         return factory.resolveTargetApiClient()
-            .send(
-                api: factory.makeGetDealApi(productID: productID),
-                for: Product.self
-            )
+            .send(api: factory.makeGetDealApi(productID: productID))
     }
 }

@@ -1,6 +1,9 @@
 import Foundation
+import SimpleApiClient
 
 struct GetDealsApi: HttpApiRequest {
+    typealias ResponseType = ProductResponse
+    
     var endpointPath: String {
         return "deals"
     }
@@ -8,9 +11,4 @@ struct GetDealsApi: HttpApiRequest {
     var method: HttpMethod {
         return .get
     }
-    
-    var headers: HttpHeaders?
-    
-    var parameters: HttpParameters?
-    
 }

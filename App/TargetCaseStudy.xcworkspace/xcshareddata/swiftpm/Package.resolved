@@ -46,6 +46,15 @@
       }
     },
     {
+      "identity" : "simpleapiclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Jaron-Lowe/SimpleApiClient.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7d8b9aa2e074271aa4b8fa60cfaf99d171a6e272"
+      }
+    },
+    {
       "identity" : "xcoordinator",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/quickbirdstudios/XCoordinator.git",
