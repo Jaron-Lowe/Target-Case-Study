@@ -1,0 +1,68 @@
+{
+  "pins" : [
+    {
+      "identity" : "combinecocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CombineCommunity/CombineCocoa.git",
+      "state" : {
+        "revision" : "4e262c2f9fb1cee1cb3be5717f7e6b55eb823971",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "combinedatasources",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/combineopensource/CombineDataSources",
+      "state" : {
+        "revision" : "362795e0336f2c1637036f692a3b5d05806302b4",
+        "version" : "0.2.5"
+      }
+    },
+    {
+      "identity" : "combineext",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CombineCommunity/CombineExt.git",
+      "state" : {
+        "revision" : "581849239060948b626d1173eb0e5926818e7f8c",
+        "version" : "1.7.0"
+      }
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c1c36dff9fa838c9d5d01a4096a9a9bab84d5a5e"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "simpleapiclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Jaron-Lowe/SimpleApiClient.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7d8b9aa2e074271aa4b8fa60cfaf99d171a6e272"
+      }
+    },
+    {
+      "identity" : "xcoordinator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/quickbirdstudios/XCoordinator.git",
+      "state" : {
+        "revision" : "eb6edf701434c3a9d7460009298cf35575b96ed5",
+        "version" : "2.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
