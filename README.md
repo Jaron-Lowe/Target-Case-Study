@@ -1,3 +1,5 @@
+# FOR MY IMPLEMENTATION SEE THE [Changes-For-Target](https://github.com/Jaron-Lowe/Target-Case-Study/tree/Changes-For-Target) BRANCH.
+
 ## Target iOS Case Study
 You have been given control over an iOS project that was originally a proof-of-concept project. The original developer of the project has since moved on to a new team,
 and Target has asked you to turn the project into an application that the company could release to the public.
